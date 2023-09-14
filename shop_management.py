@@ -91,7 +91,7 @@ def display_menu():
         i = i+1
 
 def banner():
-    banner_grabing = colored(pyfiglet.figlet_format("Fruit Shop Management"),'blue').center(500)
+    banner_grabing = colored(pyfiglet.figlet_format('Fruit  Shop'),'blue').rjust(20)
     print(banner_grabing)
 
 #customer part is start from here
@@ -131,8 +131,8 @@ def customer(name, email):
 banner()
 csv_file_read()
 
-print(colored("1...Administrator Login".rjust(100),"yellow").rjust(100))
-print(colored("2..*******User*********".rjust(100),"yellow").rjust(100))
+print(colored("1..................Administrator Login................".rjust(100),"yellow").rjust(100))
+print(colored("2...Customer want to bye product pls select this option".rjust(100),"yellow").rjust(100))
 
 option = input(colored("selection to continue : ","red").rjust(100))
 
